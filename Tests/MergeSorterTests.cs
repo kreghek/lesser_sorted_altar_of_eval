@@ -32,7 +32,7 @@ namespace Tests
 
             //ASSERT
 
-            AssertArrayIsSorted(a);
+            AssertHelper.ArrayIsSorted(a);
         }
 
         /// <summary>
@@ -41,12 +41,12 @@ namespace Tests
         /// 3. На выходе получаем отсортированный массив.
         /// </summary>
         [Test]
-        public void Sort_Simple_ReturnsSortedArray()
+        [TestCaseSource(typeof(ArrayTestCaseData), nameof(ArrayTestCaseData.TestCases))]
+        public void Sort_FromArrayTestCases_ReturnsSortedArray(int[] a)
         {
             //ARRANGE
 
             var sorter = new MergeSorter();
-            var a = new[] { 2, 3, 6, 1, 4, 5 };
 
 
 
@@ -58,67 +58,59 @@ namespace Tests
 
             //ASSERT
 
-            AssertArrayIsSorted(a);
+            AssertHelper.ArrayIsSorted(a);
         }
 
-        /// <summary>
-        /// 1. В системе есть массив из одного элемента.
-        /// 2. Сортируем массив.
-        /// 3. На выходе получаем массив из одного элемента.
-        /// </summary>
-        [Test]
-        public void Sort_HasOneElementArray_ReturnsSortedArray()
-        {
-            //ARRANGE
+        ///// <summary>
+        ///// 1. В системе есть массив из одного элемента.
+        ///// 2. Сортируем массив.
+        ///// 3. На выходе получаем массив из одного элемента.
+        ///// </summary>
+        //[Test]
+        //public void Sort_HasOneElementArray_ReturnsSortedArray()
+        //{
+        //    //ARRANGE
 
-            var sorter = new MergeSorter();
-            var a = new[] { 2 };
-
-
-
-            // ACT
-
-            sorter.Sort(a);
+        //    var sorter = new MergeSorter();
+        //    var a = new[] { 2 };
 
 
 
-            //ASSERT
+        //    // ACT
 
-            AssertArrayIsSorted(a);
-        }
-
-        /// <summary>
-        /// 1. В системе есть массив из нечётного количества элементов.
-        /// 2. Сортируем массив.
-        /// 3. На выходе получаем отсортированный массив.
-        /// </summary>
-        [Test]
-        public void Sort_OddArray_ReturnsSortedArray()
-        {
-            //ARRANGE
-
-            var sorter = new MergeSorter();
-            var a = new[] { 2, 3, 1 };
+        //    sorter.Sort(a);
 
 
 
-            // ACT
+        //    //ASSERT
 
-            sorter.Sort(a);
+        //    AssertHelper.ArrayIsSorted(a);
+        //}
+
+        ///// <summary>
+        ///// 1. В системе есть массив из нечётного количества элементов.
+        ///// 2. Сортируем массив.
+        ///// 3. На выходе получаем отсортированный массив.
+        ///// </summary>
+        //[Test]
+        //public void Sort_OddArray_ReturnsSortedArray()
+        //{
+        //    //ARRANGE
+
+        //    var sorter = new MergeSorter();
+        //    var a = new[] { 2, 3, 1 };
 
 
 
-            //ASSERT
+        //    // ACT
 
-            AssertArrayIsSorted(a);
-        }
+        //    sorter.Sort(a);
 
-        public void AssertArrayIsSorted(int[] a)
-        {
-            for (var i = 1; i < a.Length; i++)
-            {
-                Assert.LessOrEqual(a[i - 1], a[i], $"Элемент i:{i - 1} ({a[i - 1]}) больше чем i:{i} ({a[i]}).");
-            }
-        }
+
+
+        //    //ASSERT
+
+        //    AssertHelper.ArrayIsSorted(a);
+        //}
     }
 }

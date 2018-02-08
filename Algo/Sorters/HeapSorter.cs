@@ -1,12 +1,17 @@
-﻿using System;
-
-namespace Algo.Sorters
+﻿namespace Algo.Sorters
 {
     public class HeapSorter : ISorter
     {
         public int[] Sort(int[] source)
         {
-            throw new NotImplementedException();
+            var heap = new Heap
+            {
+                A = source,
+                HeapSize = source.Length
+            };
+            HeapSort(heap);
+
+            return source;
         }
 
         public void Heapify(Heap heap, int i)
@@ -31,7 +36,7 @@ namespace Algo.Sorters
 
             if (largest != i)
             {
-                Change(heap.A, i, largest);
+                SortHelper.Exchange(heap.A, i, largest);
                 Heapify(heap, largest);
             }
         }
@@ -49,9 +54,9 @@ namespace Algo.Sorters
         public void HeapSort(Heap heap)
         {
             BuildHeap(heap);
-            for (var i = heap.A.Length; i >= 1; i--)
+            for (var i = heap.A.Length - 1; i >= 1; i--)
             {
-                Change(heap.A, 0, i);
+                SortHelper.Exchange(heap.A, 0, i);
                 heap.HeapSize--;
                 Heapify(heap, 0);
             }
@@ -71,13 +76,6 @@ namespace Algo.Sorters
         public int Right(int i)
         {
             return 2 * (i + 1);
-        }
-
-        public void Change(int[] a, int x, int y)
-        {
-            var temp = a[x];
-            a[x] = a[y];
-            a[y] = temp;
         }
     }
 

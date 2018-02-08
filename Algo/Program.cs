@@ -31,6 +31,10 @@ namespace Algo
                     sorter = new MergeSorter();
                     break;
 
+                case "heap":
+                    sorter = new HeapSorter();
+                    break;
+
                 default:
                     throw new ArgumentException("sorterType is undefined");
             }

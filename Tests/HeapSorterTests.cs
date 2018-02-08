@@ -30,7 +30,10 @@ namespace Tests
 
             //ASSERT
 
-            AssertArrayIsHeap(a, 0);
+            var parent = a[0];
+            var left = a[1];
+            var right = a[2];
+            AssertHelper.ArrayIsHeap(parent, left, right);
         }
 
         /// <summary>
@@ -56,7 +59,10 @@ namespace Tests
 
             //ASSERT
 
-            AssertArrayIsHeap(a, 0);
+            var parent = a[0];
+            var left = a[1];
+            var right = a[2];
+            AssertHelper.ArrayIsHeap(parent, left, right);
         }
 
         /// <summary>
@@ -82,23 +88,10 @@ namespace Tests
 
             //ASSERT
 
-            AssertArrayIsHeap(a, 0);
-        }
-
-        /// <summary>
-        /// См формулу 7.1
-        /// </summary>
-        /// <param name="a"></param>
-        /// <param name="parent"></param>
-        private void AssertArrayIsHeap(int[] a, int parent)
-        {
-            for (var i = 0; i < a.Length; i++)
-            {
-                if (parent == i)
-                    continue;
-
-                Assert.GreaterOrEqual(a[parent], a[i]);
-            }
+            var parent = a[0];
+            var left = a[1];
+            var right = a[2];
+            AssertHelper.ArrayIsHeap(parent, left, right);
         }
     }
 }
