@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Topo", "Topo\Topo.csproj", "{F63FE47F-D90B-4C0F-9E0D-8F80551F47EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Topo.Tests", "TopoSorter.Tests\Topo.Tests.csproj", "{DE20D85C-3D1C-4E62-B6D9-7A79A7F8D444}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Geom", "Geom\Geom.csproj", "{2392D2A9-2B65-4AD1-80FF-903A47A8D529}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F63FE47F-D90B-4C0F-9E0D-8F80551F47EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F63FE47F-D90B-4C0F-9E0D-8F80551F47EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F63FE47F-D90B-4C0F-9E0D-8F80551F47EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F63FE47F-D90B-4C0F-9E0D-8F80551F47EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE20D85C-3D1C-4E62-B6D9-7A79A7F8D444}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE20D85C-3D1C-4E62-B6D9-7A79A7F8D444}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE20D85C-3D1C-4E62-B6D9-7A79A7F8D444}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE20D85C-3D1C-4E62-B6D9-7A79A7F8D444}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2392D2A9-2B65-4AD1-80FF-903A47A8D529}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2392D2A9-2B65-4AD1-80FF-903A47A8D529}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2392D2A9-2B65-4AD1-80FF-903A47A8D529}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2392D2A9-2B65-4AD1-80FF-903A47A8D529}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AE52B673-F4C7-479A-BFC0-421B5BF8DCC9}
+	EndGlobalSection
+EndGlobal
