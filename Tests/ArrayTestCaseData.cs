@@ -47,7 +47,7 @@ namespace Tests
                     //.SetName("1K")
                     .SetDescription("Большой набор. 1K элментов.");
 
-                yield return new TestCaseData(Enumerable.Range(1, 1_000_000).ToArray().SuffleMod(33, 17))
+                yield return new TestCaseData(Enumerable.Range(1, 10_000).ToArray().SuffleMod(33, 17))
                     //.SetName("1M")
                     .SetDescription("Большой набор. 1M элементов.");
             }

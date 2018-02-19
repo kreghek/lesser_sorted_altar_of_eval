@@ -11,7 +11,7 @@ namespace Algo.Sorters
             if (p < r)
             {
                 var q = Partition(a, p, r);
-                QuickSort(a, p, q - 1);
+                QuickSort(a, p, q);
                 QuickSort(a, q + 1, r);
             }
         }
