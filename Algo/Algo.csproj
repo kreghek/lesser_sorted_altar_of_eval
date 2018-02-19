@@ -50,6 +50,7 @@
     <Compile Include="ISorter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sorters\RadixSorter.cs" />
     <Compile Include="Sorters\HeapSorter.cs" />
     <Compile Include="Sorters\CountingSorter.cs" />
     <Compile Include="Sorters\RandomQuickSorter.cs" />

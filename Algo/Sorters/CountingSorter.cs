@@ -1,6 +1,6 @@
 ﻿namespace Algo.Sorters
 {
-    public sealed class CountingSorter : ISorter
+    public class CountingSorter : ISorter
     {
         private readonly int k;
 
@@ -16,7 +16,8 @@
 
             for (var i = 0; i < source.Length; i++)
             {
-                c[source[i]]++;
+                var sourceValue = GetSortValue(source[i]);
+                c[sourceValue]++;
             }
 
             for (var i = 1; i <= k; i++)
@@ -31,6 +32,11 @@
             }
 
             return b;
+        }
+
+        protected virtual int GetSortValue(int sourceValue)
+        {
+            return sourceValue;
         }
     }
 }
