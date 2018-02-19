@@ -4,18 +4,18 @@
     {
         public int[] Sort(int[] source)
         {
-            for (var i = 1; i < source.Length; i++)
+            for (var j = 1; j < source.Length; j++)
             {
-                var key = source[i];
+                var key = source[j];
 
-                var j = i - 1;
-                while (j > -1 && source[j] > key)
+                var i = j - 1;
+                while (i > -1 && source[i] > key)
                 {
-                    source[j + 1] = source[j];
-                    j--;
+                    source[i + 1] = source[i];
+                    i--;
                 }
 
-                source[j + 1] = key;
+                source[i + 1] = key;
             }
 
             return source;
