@@ -7,17 +7,18 @@ namespace Tests
     public class RandomQuickSorterTests
     {
         /// <summary>
-        /// 1. В системе есть массив из со случайными уникальными значениями.
+        /// 1. В системе есть произвольный массив.
         /// 2. Сортируем.
         /// 3. Массив отсортирован.
         /// </summary>
         [Test]
-        public void Sort_SortRandomUniqueArray_ReturnsSortedArray()
+        [TestCaseSource(typeof(ArrayTestCaseData), nameof(ArrayTestCaseData.TestCases))]
+        public void Sort_SortRandomUniqueArray_ReturnsSortedArray(int[] a)
         {
             //ARRANGE
 
             var sorter = new RandomQuickSorter();
-            var a = new[] { 6, 1, 3, 4, 9, 2 };
+
 
 
             // ACT

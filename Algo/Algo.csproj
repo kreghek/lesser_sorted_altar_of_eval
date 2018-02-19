@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataGenerator.cs" />
+    <Compile Include="GreedActivitySelector.cs" />
     <Compile Include="ISorter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

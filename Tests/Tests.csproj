@@ -47,6 +47,7 @@
     <Compile Include="ArrayTestCaseData.cs" />
     <Compile Include="AssertHelper.cs" />
     <Compile Include="CountingSorterTests.cs" />
+    <Compile Include="GreedActivitySelectorTests.cs" />
     <Compile Include="RandomQuickSorterTests.cs" />
     <Compile Include="QuickSorterTests.cs" />
     <Compile Include="HeapSorterTests.cs" />
