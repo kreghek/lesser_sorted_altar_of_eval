@@ -60,57 +60,5 @@ namespace Tests
 
             AssertHelper.ArrayIsSorted(a);
         }
-
-        ///// <summary>
-        ///// 1. В системе есть массив из одного элемента.
-        ///// 2. Сортируем массив.
-        ///// 3. На выходе получаем массив из одного элемента.
-        ///// </summary>
-        //[Test]
-        //public void Sort_HasOneElementArray_ReturnsSortedArray()
-        //{
-        //    //ARRANGE
-
-        //    var sorter = new MergeSorter();
-        //    var a = new[] { 2 };
-
-
-
-        //    // ACT
-
-        //    sorter.Sort(a);
-
-
-
-        //    //ASSERT
-
-        //    AssertHelper.ArrayIsSorted(a);
-        //}
-
-        ///// <summary>
-        ///// 1. В системе есть массив из нечётного количества элементов.
-        ///// 2. Сортируем массив.
-        ///// 3. На выходе получаем отсортированный массив.
-        ///// </summary>
-        //[Test]
-        //public void Sort_OddArray_ReturnsSortedArray()
-        //{
-        //    //ARRANGE
-
-        //    var sorter = new MergeSorter();
-        //    var a = new[] { 2, 3, 1 };
-
-
-
-        //    // ACT
-
-        //    sorter.Sort(a);
-
-
-
-        //    //ASSERT
-
-        //    AssertHelper.ArrayIsSorted(a);
-        //}
     }
 }

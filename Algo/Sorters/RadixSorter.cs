@@ -1,10 +1,12 @@
-﻿namespace Algo.Sorters
+﻿using System;
+
+namespace Algo.Sorters
 {
     public sealed class RadixSorter : ISorter
     {
         public int[] Sort(int[] source)
         {
-
+            throw new NotImplementedException();
         }
 
         public class RadixCountingSorter : CountingSorter

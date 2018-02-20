@@ -11,7 +11,7 @@ namespace Algo
             result.Add(0);
             var j = 0;
 
-            for (var i = 2; i < s.Length; i++)
+            for (var i = 1; i < s.Length; i++)
             {
                 if (s[i] >= f[j])
                 {
