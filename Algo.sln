@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algo", "Algo\Algo.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{FA0116B5-BA38-4EF2-A344-3F23F5AD89E2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Stepik", "Stepik", "{1199E555-5801-4C94-B32B-150632551C9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson2_Hard", "Lesson2_Hard\Lesson2_Hard.csproj", "{19621576-F709-43ED-A7E1-62A84DE77AFB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,11 +25,18 @@ Global
 		{FA0116B5-BA38-4EF2-A344-3F23F5AD89E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA0116B5-BA38-4EF2-A344-3F23F5AD89E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA0116B5-BA38-4EF2-A344-3F23F5AD89E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19621576-F709-43ED-A7E1-62A84DE77AFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19621576-F709-43ED-A7E1-62A84DE77AFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19621576-F709-43ED-A7E1-62A84DE77AFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19621576-F709-43ED-A7E1-62A84DE77AFB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8682F319-F3D1-4BA9-9242-3254D518DB38}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{19621576-F709-43ED-A7E1-62A84DE77AFB} = {1199E555-5801-4C94-B32B-150632551C9A}
 	EndGlobalSection
 EndGlobal
