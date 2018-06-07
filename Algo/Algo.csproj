@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cgd\GcdFinder.cs" />
     <Compile Include="DataGenerator.cs" />
     <Compile Include="Fibonacci\FibonacciFinder.cs" />
     <Compile Include="GreedActivitySelector.cs" />

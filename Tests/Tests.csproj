@@ -58,6 +58,8 @@
     <Compile Include="Fibonacci\FibonacciFinderTests.cs" />
     <Compile Include="Fibonacci\TestCaseDataSources\ModFibonacciTestCaseDataSource.cs" />
     <Compile Include="Fibonacci\TestCaseDataSources\SmallFibonacciTestCaseDataSource.cs" />
+    <Compile Include="Gcd\GcdFinderTests.cs" />
+    <Compile Include="Gcd\TestCaseDataSources\GcdTestCaseDataSource.cs" />
     <Compile Include="GreedActivitySelectorTests.cs" />
     <Compile Include="InsertSorterTests.cs" />
     <Compile Include="RandomQuickSorterTests.cs" />
@@ -75,7 +77,6 @@
       <Name>Algo</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

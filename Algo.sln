@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Stepik", "Stepik", "{1199E5
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson2_Hard", "Lesson2_Hard\Lesson2_Hard.csproj", "{19621576-F709-43ED-A7E1-62A84DE77AFB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson2_GCD", "Lesson2_GCD\Lesson2_GCD.csproj", "{3238A0C8-5F26-4056-A8CC-139855271C64}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{19621576-F709-43ED-A7E1-62A84DE77AFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19621576-F709-43ED-A7E1-62A84DE77AFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19621576-F709-43ED-A7E1-62A84DE77AFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3238A0C8-5F26-4056-A8CC-139855271C64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3238A0C8-5F26-4056-A8CC-139855271C64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3238A0C8-5F26-4056-A8CC-139855271C64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3238A0C8-5F26-4056-A8CC-139855271C64}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -38,5 +44,6 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{19621576-F709-43ED-A7E1-62A84DE77AFB} = {1199E555-5801-4C94-B32B-150632551C9A}
+		{3238A0C8-5F26-4056-A8CC-139855271C64} = {1199E555-5801-4C94-B32B-150632551C9A}
 	EndGlobalSection
 EndGlobal

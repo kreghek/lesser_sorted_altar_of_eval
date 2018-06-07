@@ -1,8 +1,11 @@
 ﻿using System.Collections;
+using System.Diagnostics.CodeAnalysis;
 using NUnit.Framework;
 
 namespace Tests.Fibonacci.TestCaseDataSources
 {
+    [SuppressMessage("ReSharper", "HeapView.ObjectAllocation.Evident")]
+    [SuppressMessage("ReSharper", "HeapView.BoxingAllocation")]
     internal class SmallFibonacciTestCaseDataSource
     {
         public static IEnumerable TestCases()
